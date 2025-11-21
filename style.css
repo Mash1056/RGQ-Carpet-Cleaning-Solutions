@@ -40,7 +40,7 @@ a {
 }
 
 .logo-img {
-    height: 50px;
+    height: 90px;
     width: auto;
     display: block;
 }
@@ -105,22 +105,20 @@ a {
 /* ==============
    BUTTONS
    ============== */
-button {
-    padding: 12px 28px;
-    background: #32CD32;
+.quote-btn {
+    padding: 10px 20px;
+    background-color: #32CD32;   /* same green */
+    color: white;
     border: none;
-    color: #000000;
-    font-size: 1rem;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    text-decoration: none;        /* remove underline */
+    display: inline-block;
+    font-size: 1rem;
 }
 
-button:hover {
-    background: #3af53a;
-    transform: translateY(-1px);
-    box-shadow: 0 0 8px #32CD32;
+.quote-btn:hover {
+    background-color: #32CD32;    /* same hover green */
 }
 
 /* ==============
