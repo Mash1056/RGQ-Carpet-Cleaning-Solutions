@@ -32,14 +32,22 @@
     Below is our quick message form:
 </p>
 
-<!-- ✅ Updated Formspree-enabled Form -->
-<form id="contactForm" action="https://formspree.io/f/mnqekjlj" method="POST">
+<form id="contactForm" method="POST" action="https://api.web3forms.com/submit">
+    
+    <!-- REQUIRED Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="283f04a8-874b-4fae-a975-9936495ccaa5">
+
+    <!-- Optional: Subject Line -->
+    <input type="hidden" name="subject" value="New RGQ Website Enquiry">
+
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" placeholder="Your Message" required></textarea>
+
     <button type="submit">Send Message</button>
     <p id="formStatus"></p>
 </form>
+
 
 <h2>How to Book a Cleaning</h2>
 
