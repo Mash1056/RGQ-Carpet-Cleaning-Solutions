@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact - R.G.Q Carpet Cleaning Solutions</title>
 <link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
 </head>
 <body>
 
@@ -31,11 +32,13 @@
     Below is our quick message form:
 </p>
 
-<form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message"></textarea>
+<!-- ✅ Updated Formspree-enabled Form -->
+<form id="contactForm" action="https://formspree.io/f/mnqekjlj" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Message</button>
+    <p id="formStatus"></p>
 </form>
 
 <h2>How to Book a Cleaning</h2>
